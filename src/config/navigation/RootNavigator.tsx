@@ -1,5 +1,7 @@
-import { Stack } from "../constants";
+import * as React from 'react';
+import { Stack } from "../utils/stack";
 import { setRoutes } from "./routes";
+import { LOGIN_VIEW } from './routes/paths';
 
 
 export function RootNavigator() {
