@@ -1,6 +1,9 @@
+import * as AUTH from '../constants/index';
+import { User } from '../../../infrastructure/modules/Login/domain/models/User';
+
 export interface AuthState {
-  status: 'checking' | 'authenticated' | 'not-authenticated';
-  token: string | null;
+  status: string;
+  token: string;
   errorMessage: string;
-  user: {} | null;
+  user: User;
 }
